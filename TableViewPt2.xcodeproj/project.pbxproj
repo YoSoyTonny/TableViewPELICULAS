@@ -14,6 +14,8 @@
 		BED323F42332D0F900A5CC35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BED323F22332D0F900A5CC35 /* LaunchScreen.storyboard */; };
 		BED323FF2332D0F900A5CC35 /* TableViewPt2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED323FE2332D0F900A5CC35 /* TableViewPt2Tests.swift */; };
 		BED3240A2332D0F900A5CC35 /* TableViewPt2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED324092332D0F900A5CC35 /* TableViewPt2UITests.swift */; };
+		BED3241D2332D44900A5CC35 /* Pelicula.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED3241C2332D44900A5CC35 /* Pelicula.swift */; };
+		BED3241F2332D7D400A5CC35 /* celdaPelicula_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED3241E2332D7D400A5CC35 /* celdaPelicula_Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		BED324052332D0F900A5CC35 /* TableViewPt2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewPt2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED324092332D0F900A5CC35 /* TableViewPt2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewPt2UITests.swift; sourceTree = "<group>"; };
 		BED3240B2332D0F900A5CC35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BED3241C2332D44900A5CC35 /* Pelicula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pelicula.swift; sourceTree = "<group>"; };
+		BED3241E2332D7D400A5CC35 /* celdaPelicula_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = celdaPelicula_Controller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,11 @@
 		BED323E82332D0F700A5CC35 /* TableViewPt2 */ = {
 			isa = PBXGroup;
 			children = (
-				BED323E92332D0F700A5CC35 /* AppDelegate.swift */,
-				BED323EB2332D0F700A5CC35 /* ViewController.swift */,
-				BED323ED2332D0F700A5CC35 /* Main.storyboard */,
-				BED323F02332D0F900A5CC35 /* Assets.xcassets */,
-				BED323F22332D0F900A5CC35 /* LaunchScreen.storyboard */,
-				BED323F52332D0F900A5CC35 /* Info.plist */,
+				BED3241B2332D40800A5CC35 /* Models */,
+				BED3241A2332D40300A5CC35 /* App */,
+				BED324192332D3F400A5CC35 /* Resources */,
+				BED324182332D3D100A5CC35 /* ViewControllers */,
+				BED324172332D3CC00A5CC35 /* StoryBoard */,
 			);
 			path = TableViewPt2;
 			sourceTree = "<group>";
@@ -123,6 +126,49 @@
 				BED3240B2332D0F900A5CC35 /* Info.plist */,
 			);
 			path = TableViewPt2UITests;
+			sourceTree = "<group>";
+		};
+		BED324172332D3CC00A5CC35 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				BED323ED2332D0F700A5CC35 /* Main.storyboard */,
+				BED323F22332D0F900A5CC35 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		BED324182332D3D100A5CC35 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BED323EB2332D0F700A5CC35 /* ViewController.swift */,
+				BED3241E2332D7D400A5CC35 /* celdaPelicula_Controller.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BED324192332D3F400A5CC35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BED323F02332D0F900A5CC35 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BED3241A2332D40300A5CC35 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BED323F52332D0F900A5CC35 /* Info.plist */,
+				BED323E92332D0F700A5CC35 /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		BED3241B2332D40800A5CC35 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BED3241C2332D44900A5CC35 /* Pelicula.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED3241F2332D7D400A5CC35 /* celdaPelicula_Controller.swift in Sources */,
+				BED3241D2332D44900A5CC35 /* Pelicula.swift in Sources */,
 				BED323EC2332D0F700A5CC35 /* ViewController.swift in Sources */,
 				BED323EA2332D0F700A5CC35 /* AppDelegate.swift in Sources */,
 			);
